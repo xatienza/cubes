@@ -31,15 +31,5 @@ namespace cubes.domain
         protected void SetDepth(double value, double length) =>
             Depth = new Margin(value, length);
         #endregion
-
-        public double IntersectionVolumeWith(Cube cube) =>
-                Width.Overlap(cube.Width)
-                * Height.Overlap(cube.Height)
-                * Depth.Overlap(cube.Depth);
-
-        public bool CollidesWith(Cube cube) =>
-                Width.Collides(cube.Width)
-                || Height.Collides(cube.Height)
-                || Depth.Collides(cube.Depth);
     }
 }
