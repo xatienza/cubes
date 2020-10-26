@@ -6,7 +6,7 @@ namespace cubes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Console application is not implemeted yet! Please run dotnet test...");
         }
     }
 }
