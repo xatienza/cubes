@@ -8,4 +8,12 @@ whether the two objects collide and calculate the intersected volume.
 
 ## Test
 
-- Users cant test the project running the commmand `dotnet test` on the *** cubes.test *** folder.
+You can now run your tests using the Visual Studio Test Explorer, or by running `dotnet test` from the command line.
+
+```sh
+# Restore the NuGet packages
+dotnet restore
+
+# Run the unit tests in a different directory
+dotnet test cubes.test/cubes.test.csproj
+```
